@@ -343,6 +343,39 @@ body {
     margin-top: 0.5rem;
 }
 
+/* Team Grid Styles */
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-top: 1rem;
+}
+
+.team-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.team-logo {
+    width: 100%;
+    max-width: 180px;
+    height: auto;
+    border-radius: 0.5rem;
+    transition: transform 0.3s ease;
+}
+
+.team-logo:hover {
+    transform: scale(1.1);
+}
+
+.team-name {
+    font-weight: 500;
+    color: var(--text-color);
+    margin-top: 1rem;
+}
+
 @media (max-width: 768px) {
     .research-container {
         flex-direction: column;
@@ -351,5 +384,16 @@ body {
     .research-image {
         flex: 0 0 auto;
         width: 100%;
+    }
+
+    .movie-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .movie-grid {
+        grid-template-columns: 1fr;
     }
 }
