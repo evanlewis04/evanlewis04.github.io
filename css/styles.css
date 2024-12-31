@@ -308,6 +308,41 @@ body {
     color: var(--primary-dark);
 }
 
+/* Movie Grid Styles */
+.movie-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.movie-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.movie-poster {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    margin-bottom: 0.75rem;
+    transition: transform 0.3s ease;
+}
+
+.movie-poster:hover {
+    transform: scale(1.05);
+}
+
+.movie-title {
+    font-weight: 500;
+    color: var(--text-color);
+    margin-top: 0.5rem;
+}
+
 @media (max-width: 768px) {
     .research-container {
         flex-direction: column;
