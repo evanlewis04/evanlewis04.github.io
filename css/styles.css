@@ -448,6 +448,24 @@ a {
     min-height: auto;
 }
 
+.interests-panel {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.4rem 1.8rem;
+}
+
+.interest-group {
+    min-width: 0;
+}
+
+.interest-group h3 {
+    margin: 0 0 0.75rem;
+    color: var(--white);
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(1.2rem, 2vw, 1.45rem);
+    font-weight: 500;
+}
+
 .feature-list {
     display: grid;
     gap: 0.95rem;
@@ -567,6 +585,10 @@ a {
     }
 
     .project-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .interests-panel {
         grid-template-columns: 1fr;
     }
 }
