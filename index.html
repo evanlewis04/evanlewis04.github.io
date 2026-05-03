@@ -5,205 +5,143 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Evan Lewis - Personal Website</title>
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <button class="mobile-nav-toggle">
-        <i class="fas fa-bars"></i>
-    </button>
+    <a class="skip-link" href="#main">Skip to content</a>
 
-    <nav class="sidebar">
-        <div class="sidebar-header">
-            <a href="#" class="logo">Evan Lewis</a>
-        </div>
-        <div class="nav-links">
-            <a href="#home">Home</a>
-            <a href="#research">Research Experience</a>
-            <a href="#professional">Professional Experience</a>
-            <a href="#projects">Personal Projects</a>
-            <a href="#puzzles">Jane Street Puzzles</a>
+    <header class="site-header">
+        <a class="site-logo" href="#home" aria-label="Evan Lewis home">
+            <span class="logo-mark">EL</span>
+            <span class="logo-text">Evan Lewis</span>
+        </a>
+
+        <button class="nav-toggle" type="button" aria-label="Open navigation" aria-controls="site-nav" aria-expanded="false">
+            <span></span>
+            <span></span>
+        </button>
+
+        <nav id="site-nav" class="site-nav" aria-label="Primary navigation">
+            <a href="#bio">Bio</a>
+            <a href="#experience">Experience</a>
+            <a href="#projects">Projects</a>
             <a href="#books">Books</a>
-            <a href="#investments">Investments</a>
-            <a href="#interests">More About Me</a>
-        </div>
-    </nav>
+            <a href="#movies">Movies</a>
+        </nav>
+    </header>
 
-    <main class="main-content">
-        <section id="home" class="hero">
-            <div class="hero-content">
-                <div class="hero-text">
-                    <h1>Evan Lewis</h1>
-                    <p>Welcome to my website. I'm currently a sophomore at the University of Maryland, pursuing a degree in Computer Science with a concentration 
-                        in machine learning. I am passionate about innovative technologies, finance, and programming.</p>
-                    <div class="social-links">
-                        <a href="https://github.com/evanlewis04" target="_blank" aria-label="GitHub">
-                            <i class="fab fa-github"></i>
-                        </a>
-                        <a href="https://www.linkedin.com/in/evan-lewis04" target="_blank" aria-label="LinkedIn">
-                            <i class="fab fa-linkedin"></i>
-                        </a>
-                        <a href="https://x.com/evanlewis810" target="_blank" aria-label="X">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                        <a href="files/resume.pdf" target="_blank" aria-label="Resume">
-                            <i class="fas fa-file-alt"></i>
-                        </a>
-                    </div>
+    <main id="main">
+        <section id="home" class="hero-section" aria-labelledby="hero-title">
+            <div class="hero-inner">
+                <div class="hero-copy">
+                    <h1 id="hero-title">Evan Lewis</h1>
+                    <p class="hero-subtitle">Computer Science student focused on machine learning, financial technology, and practical software systems.</p>
+                    <div class="hero-rule" aria-hidden="true"></div>
                 </div>
-                <div class="hero-image">
-                    <img src="images/profile-picture.jpg" alt="Evan Lewis" class="profile-image">
-                </div>
+                <figure class="portrait-frame">
+                    <img src="images/profile-picture.jpg" alt="Portrait of Evan Lewis">
+                </figure>
             </div>
         </section>
 
-        <section id="research" class="section">
-            <h2 class="section-title">Research Experience</h2>
-            <div class="content-card research-card">
-                <div class="research-container">
-                    <div class="research-image">
-                        <img src="images/research-poster.jpg" alt="Research Poster" class="poster-image">
-                        <div class="research-links">
-                            <a href="files/poster.pdf" target="_blank" class="research-link">
-                                <i class="fas fa-image"></i> View Poster
-                            </a>
-                        </div>
-                    </div>
-                    <div class="research-content">
-                        <h3>Climate Computing Research</h3>
-                        <p>During the fall 2024 semester, I worked with a group of three other researchers to determine what impacts extreme Arctic Oscillation would have on
-                       the northern Atlantic Ocean. Over the course of the semester, we developed our research question, tested numerous climate models, and presented
-                       our findings at the annual FIRE Summit at the University of Maryland. Our research was conducted as a part of the First-Year Innovation and Research 
-                       Experience at the University of Maryland, specifically within the Climate Computing stream of the program fascilitated by Dr. Sara Strey.</p>
-                    </div>
-                </div>
+        <section id="bio" class="content-section" aria-labelledby="bio-title">
+            <div class="section-heading">
+                <p class="section-kicker">About</p>
+                <h2 id="bio-title">Brief Bio</h2>
             </div>
-            <div class="content-card">
-                <h3>Research Mentoring</h3>
-                <p>I am currently a Peer Research Mentor with the Climate Computing Stream of FIRE. I serve as a mentor to freshmen Climate Computing Researchers
-                    who are beginning their own research projects and need help with the fundamentals of research and intricacies of running climate models.</p>
+            <div class="content-panel">
+                <p>I am a Computer Science student at the University of Maryland pursuing a machine learning concentration and a business minor, with an expected graduation in May 2027. I am interested in the overlap between software engineering, data-driven decision making, finance, and emerging technology, with experience across backend systems, climate computing research, and applied machine learning projects.</p>
             </div>
         </section>
 
-        <section id="professional" class="section">
-            <h2 class="section-title">Professional Experience</h2>
-            <div class="content-card">
-                <h3>Programming Counselor</h3>
-                <p> This past summer I worked as a programming counselor at TIC camp, where I taught campers ages 7 to 15 how to program video games in Scratch, Processing (Java), and Lua in a fun and engaging manner. 
-                    My main task was guiding campers in their programming of various 2D games, including multiple types of platformers, dungeon crawlers, 
-                    and fighting games, as well as 3D games including first-person shooters and top-down player versus environment games with custom art.
-                    At the end of each two week session, I assisted the campers in presenting their video games to their parents and uploaded them to a website</p>
+        <section id="experience" class="content-section" aria-labelledby="experience-title">
+            <div class="section-heading">
+                <p class="section-kicker">Background</p>
+                <h2 id="experience-title">Experience</h2>
             </div>
-            <div class="content-card">
-                <h3>Software Intern</h3>
-                <p>While working as a software intern at Perlman Camp, my primary task was developing a project that contained an algortihm for sorting campering into activities. 
-                    For this project I learned how to use the Apache Maven build automation tool, utilizing the Apache POI commands to read and write to Excel sheets.
-                    To handle sorting the hundreds of campers into their activities, I developed my own dynamic sorting algorithm for the project. Once deployed, I conducted maintenance 
-                    and testing on the project throughout the summer when the program was in use, calibrating the sorting algorithm to the camp’s requests.</p>
+            <div class="content-panel timeline">
+                <article class="entry">
+                    <div class="entry-meta">
+                        <span>June 2025 - August 2025</span>
+                        <span>Dallas, TX</span>
+                    </div>
+                    <h3>Software Engineer Intern, Texas Instruments</h3>
+                    <p>Engineered a soft bounce email management system designed to protect email credibility, including internal SQL databases and Python scripts that synchronized systems through SendGrid API calls.</p>
+                </article>
+                <article class="entry">
+                    <div class="entry-meta">
+                        <span>January 2025 - May 2025</span>
+                        <span>College Park, MD</span>
+                    </div>
+                    <h3>Peer Research Mentor, University of Maryland</h3>
+                    <p>Mentored students in the Climate Computing stream of FIRE, supporting research development, data analysis, modeling, and presentation of undergraduate research posters.</p>
+                </article>
+                <article class="entry">
+                    <div class="entry-meta">
+                        <span>August 2023 - December 2024</span>
+                        <span>College Park, MD</span>
+                    </div>
+                    <h3>Climate Computing Researcher, FIRE</h3>
+                    <p>Researched relationships between wave activity flux and Arctic weather patterns, writing Python scripts for simulations and analysis on Derecho, the NCAR supercomputer.</p>
+                </article>
+                <article class="entry">
+                    <div class="entry-meta">
+                        <span>February 2022 - August 2022</span>
+                        <span>Rockville, MD</span>
+                    </div>
+                    <h3>Software Engineer Intern, Perlman Camp</h3>
+                    <p>Built and refined a Java-based dynamic sorting algorithm for camper activity placement, using Apache POI to read and write operational data from Excel sheets.</p>
+                </article>
             </div>
         </section>
 
-        <section id="projects" class="section">
-            <h2 class="section-title">Personal Projects</h2>
-            <div class="content-card">
-                <h3>College Basketball Prediction Algorithm</h3>
-                <p>In Progress</p>
+        <section id="projects" class="content-section" aria-labelledby="projects-title">
+            <div class="section-heading">
+                <p class="section-kicker">Work</p>
+                <h2 id="projects-title">Projects</h2>
             </div>
-            <div class="content-card">
-                <h3>Black-Schoels Model Option Pricing Heatmap</h3>
-                <p>Next on the Stack</p>
-            </div>
-        </section>
-
-        <section id="puzzles" class="section">
-            <h2 class="section-title">Jane Street Puzzles</h2>
-            <div class="content-card">
-                <h3>November 2024 Solution</h3>
-                <p>Uploading Soon</p>
-            </div>
-            <div class="content-card">
-                <h3>December 2024 Solution</h3>
-                <p>Uploading Soon</p>
+            <div class="content-panel project-grid">
+                <article class="project-card">
+                    <p class="project-stack">Python / Pandas / NumPy / Streamlit / Plotly</p>
+                    <h3>Real-Time Option Volatility Surface</h3>
+                    <p>Built a financial analytics application with live Yahoo Finance data, interactive 3D volatility surfaces, Black-Scholes pricing, Greeks calculations, and implied volatility construction.</p>
+                </article>
+                <article class="project-card">
+                    <p class="project-stack">Python / NLTK / Scikit-learn / Seaborn</p>
+                    <h3>PlanetTerp Teacher Rating Predictor</h3>
+                    <p>Created a machine learning model to predict professor ratings using review sentiment analysis and feature extraction, comparing linear regression, ridge regression, and random forest models.</p>
+                </article>
             </div>
         </section>
 
-        <section id="books" class="section">
-            <h2 class="section-title">Books</h2>
-            <div class="content-card">
-                <h3>Recent Reads</h3>
-                <p>The Changing World Order by Ray Dalio<br>The Iliad by Homer<br>The Orestia by Aeschylus</p>
+        <section id="books" class="content-section" aria-labelledby="books-title">
+            <div class="section-heading">
+                <p class="section-kicker">Reading</p>
+                <h2 id="books-title">Books I Enjoy</h2>
             </div>
-            <div class="content-card">
-                <h3>Future Readings</h3>
-                <p>The Complete Turtle Trader by Michael W. Covel<br>One Up On Wall Street by Peter Lynch<br>The Big Short: Inside the Doomsday Machine by Michael Lewis<br>The Odyssey by Homer</p>
-            </div>
-        </section>
-
-        <section id="investments" class="section">
-            <h2 class="section-title">Investments</h2>
-            <div class="content-card">
-                <h3>Investment Philosophy</h3>
-                <p>My investment philosophy is rooted in innovation and technology. Since I began investing in October of 2022, I have actively sought out and invested in 
-                companies who I believe are devloping the technologies that are going to shape our future. My background in technology hase given me an edge over
-                the market since I began investing, and this philosophy in tandem with the company research I do has led me to make sharp decisions on which companies
-                I invest in. Some of these trades include buying Nvidia at $12.5 a share (adjusted for stock splits) and Palantir at $7 a share.</p>
-            </div>
-            <div class="content-card">
-                <h3>Current Positions</h3>
-                <p>Nvidia - NVDA<br>Palantir - PLTR<br>MicroStrategy - MSTR<br>D-Wave Quantum - QBTS<br>Quantum Corporation - QMCO</p>
+            <div class="content-panel list-panel">
+                <ul class="feature-list">
+                    <li>The Changing World Order by Ray Dalio</li>
+                    <li>The Iliad by Homer</li>
+                    <li>The Oresteia by Aeschylus</li>
+                    <li>One Up On Wall Street by Peter Lynch</li>
+                    <li>The Big Short by Michael Lewis</li>
+                </ul>
             </div>
         </section>
 
-        <section id="interests" class="section">
-            <h2 class="section-title">More About Me</h2>
-            <div class="content-card">
-                <h3>Other Interests and Passions</h3>
-                <p>I love building Lego sets and always have for as long as I can remember. Still I collect Lego sets like Luke Skywalker's X-Wing and Hogwarts Castle,
-                and I don't plane on stopping my collecting anytime soon!<br><br>Weightlifting has become a crucial part of my lifestyle, adding consistency to my schedule
-                and serving as a great stress reliever for me.<br><br>During the pandemic I became entranced in the world of watches and timepieces. I have begun to form a 
-                collection of a few inexpensive watches but one day I hope to grow it into an impressive collection of timepieces.<br><br>My favorite sport growing up was and still is
-                lacrosse, and wherever life takes me I will always have my lacrosse stick with me to keep me company.</p>
+        <section id="movies" class="content-section" aria-labelledby="movies-title">
+            <div class="section-heading">
+                <p class="section-kicker">Film</p>
+                <h2 id="movies-title">Movies I Enjoy</h2>
             </div>
-            <div class="content-card">
-                <h3>Sports Affiliations</h3>
-                    <div class="team-grid">
-                        <div class="team-item">
-                            <img src="images/capitals.png" alt="Washington Capitals" class="team-logo">
-                            <span class="team-name">Washington Capitals</span>
-                        </div>
-                        <div class="team-item">
-                            <img src="images/terps.png" alt="Maryland Terrapins" class="team-logo">
-                                <span class="team-name">University of Maryland Athletics</span>
-                        </div>
-                        <div class="team-item">
-                            <img src="images/vikings.png" alt="Minnesota Vikings" class="team-logo">
-                            <span class="team-name">Minnesota Vikings</span>
-                        </div>
-                    </div>
-            </div>
-            <div class="content-card">
-                <h3>Top 5 Favorite Movies</h3>
-                <div class="movie-grid">
-                    <div class="movie-item">
-                        <img src="images/prestige.jpg" alt="The Prestige" class="movie-poster">
-                        <span class="movie-title">The Prestige</span>
-                    </div>
-                    <div class="movie-item">
-                        <img src="images/shawshank.jpg" alt="The Shawshank Redemption" class="movie-poster">
-                        <span class="movie-title">The Shawshank Redemption</span>
-                    </div>
-                    <div class="movie-item">
-                        <img src="images/pianist.jpg" alt="The Pianist" class="movie-poster">
-                        <span class="movie-title">The Pianist</span>
-                    </div>
-                    <div class="movie-item">
-                        <img src="images/lotr.jpg" alt="The Lord of the Rings Trilogy" class="movie-poster">
-                        <span class="movie-title">The Lord of the Rings Trilogy</span>
-                    </div>
-                    <div class="movie-item">
-                        <img src="images/django.jpg" alt="Django Unchained" class="movie-poster">
-                        <span class="movie-title">Django Unchained</span>
-                    </div>
-                </div>
+            <div class="content-panel list-panel">
+                <ul class="feature-list">
+                    <li>The Prestige</li>
+                    <li>The Shawshank Redemption</li>
+                    <li>The Pianist</li>
+                    <li>The Lord of the Rings Trilogy</li>
+                    <li>Django Unchained</li>
+                </ul>
             </div>
         </section>
     </main>
