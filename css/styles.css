@@ -224,6 +224,35 @@ a {
     font-size: clamp(1rem, 1.7vw, 1.15rem);
 }
 
+.social-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.85rem;
+    margin-top: 1.4rem;
+}
+
+.social-links a {
+    display: inline-grid;
+    width: 42px;
+    height: 42px;
+    place-items: center;
+    color: var(--gold-light);
+    background: rgba(255, 255, 255, 0.035);
+    border: 1px solid rgba(222, 199, 131, 0.28);
+    border-radius: 3px;
+    font-size: 1.05rem;
+    text-decoration: none;
+    transition: color 180ms ease, border-color 180ms ease, background 180ms ease, transform 180ms ease;
+}
+
+.social-links a:hover,
+.social-links a:focus-visible {
+    color: var(--white);
+    background: rgba(222, 199, 131, 0.12);
+    border-color: rgba(222, 199, 131, 0.58);
+    transform: translateY(-2px);
+}
+
 .hero-rule {
     width: min(340px, 70vw);
     height: 1px;
