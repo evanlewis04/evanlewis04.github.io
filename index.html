@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Evan Lewis</title>
-    <link rel="stylesheet" href="css/styles.css?v=20260720a">
+    <link rel="stylesheet" href="css/styles.css?v=20260730a">
 </head>
 <body>
     <a class="skip-link" href="#main">Skip to content</a>
@@ -15,7 +15,6 @@
             <a href="#bio">Bio</a>
             <a href="#experience">Experience</a>
             <a href="#projects">Projects</a>
-            <a href="#research">Research</a>
             <a href="#interests">Interests</a>
         </nav>
     </header>
@@ -63,13 +62,6 @@
             <h2>Projects</h2>
 
             <article class="project">
-                <img src="images/projects/supply-chain-globe.png" alt="3D globe visualization with the CoWoS packaging constraint highlighted across the AI supply chain" loading="lazy">
-                <h3><a href="https://github.com/evanlewis04/ai-supply-chain-globe" target="_blank" rel="noopener noreferrer">AI Supply Chain Globe</a></h3>
-                <div class="meta">TypeScript · Three.js · React · Graph Modeling</div>
-                <p>Interactive 3D globe mapping the global AI supply chain as a directed, layered graph — power grids, fabs, advanced packaging, data centers, and model labs. Constraints like CoWoS capacity and grid-equipment lead times are first-class entities: select one and everything downstream lights up. Every claim traces to a public, dated source.</p>
-            </article>
-
-            <article class="project">
                 <img src="images/projects/graphhvac.png" alt="Knowledge graph view of HVAC distributor documents" loading="lazy">
                 <h3><a href="https://github.com/evanlewis04/GraphHVAC" target="_blank" rel="noopener noreferrer">GraphHVAC — AI Operating Manual</a></h3>
                 <div class="meta">Python · Claude Agent Loop · Hybrid Retrieval · Evals</div>
@@ -77,42 +69,11 @@
             </article>
 
             <article class="project">
-                <img src="images/projects/filings-volatility.png" alt="Unified brief combining a cited SEC filing answer with an options market context panel" loading="lazy">
-                <h3><a href="https://github.com/evanlewis04/filings-market-intelligence" target="_blank" rel="noopener noreferrer">Filings Intelligence + Options Volatility</a></h3>
-                <div class="meta">Python · RAG · SEC EDGAR · Options Pricing · Streamlit</div>
-                <p>A financial intelligence platform pairing a citation-validated RAG system over SEC filings (10-K/10-Q/8-K) with a real-time implied-volatility workstation — surfaces, skew, term structure, and expected moves from live option chains. Retrieval and answer quality are measured with a real eval harness (Recall@k, MRR, NDCG), and every value carries explicit provenance.</p>
+                <img src="images/projects/supply-chain-globe.png" alt="3D globe visualization with the CoWoS packaging constraint highlighted across the AI supply chain" loading="lazy">
+                <h3><a href="https://github.com/evanlewis04/ai-supply-chain-globe" target="_blank" rel="noopener noreferrer">AI Supply Chain Globe</a></h3>
+                <div class="meta">TypeScript · Three.js · React · Graph Modeling</div>
+                <p>Interactive 3D globe mapping the global AI supply chain as a directed, layered graph — power grids, fabs, advanced packaging, data centers, and model labs. Constraints like CoWoS capacity and grid-equipment lead times are first-class entities: select one and everything downstream lights up. Every claim traces to a public, dated source.</p>
             </article>
-
-            <article class="project">
-                <img src="images/projects/footnote.svg" alt="Illustration of Footnote glossary cards beside a video player" loading="lazy">
-                <h3><a href="https://github.com/evanlewis04/PodcastFootnote" target="_blank" rel="noopener noreferrer">Footnote</a></h3>
-                <div class="meta">Python · FastAPI · OpenAI Structured Output · Chrome Extension</div>
-                <p>A Chrome extension that turns technical YouTube videos into a just-in-time glossary. Structured LLM extraction over transcripts, strict JSON schema validation, quote-based timestamp resolution, and cache-first storage render playback-synced concept cards inside the watch page — with evaluation tooling for precision, recall, and timestamp coverage.</p>
-            </article>
-
-            <article class="project">
-                <img src="images/projects/planetterp.png" alt="PlanetTerp Predictor dashboard showing experiment runs and model metrics" loading="lazy">
-                <h3><a href="https://github.com/evanlewis04/PlanetTerp-Predictor" target="_blank" rel="noopener noreferrer">PlanetTerp Rating Predictor</a></h3>
-                <div class="meta">Python · Scikit-learn · FastAPI · React · Experiment Tracking</div>
-                <p>End-to-end ML platform predicting professor ratings from PlanetTerp review data. Extracts 60+ text, sentiment, grade, and course features; benchmarks linear, tree, and boosting models with tuning (best holdout R² 0.81); and serves saved experiment runs, metrics, and predictions through a FastAPI backend and React dashboard.</p>
-            </article>
-        </section>
-
-        <section id="research">
-            <h2>Research</h2>
-
-            <p class="research-thesis">The most durable way to own the AI buildout is to own its basic material inputs: the upstream consumables every downstream technology needs no matter which architecture wins. Toyo Tanso makes the ultra-high-purity isostatic graphite consumables inside semiconductor crystal-growth furnaces, and its IG-110 grade is one of a very small number of nuclear-qualified graphites going into the high-temperature reactors being built to power AI data centers.</p>
-
-            <article class="research-entry">
-                <div class="meta">Independent Research · July 2026 · TSE: 5310</div>
-                <h3><a href="files/Toyo_Tanso_Research_Memo.pdf" target="_blank" rel="noopener noreferrer">Toyo Tanso Co., Ltd. (TSE: 5310)</a></h3>
-                <p>A four-page note on a Japanese small-cap that sells the isostatic graphite consumables inside semiconductor crystal-growth furnaces and the nuclear-qualified IG-110 graphite going into reactors being built to power AI data centers. It walks through the business, the numbers, the nuclear qualification moat, the ways I could be wrong, and what would change my mind.</p>
-                <p class="research-links"><a href="files/Toyo_Tanso_Research_Memo.pdf" target="_blank" rel="noopener noreferrer">Read the full memo (PDF)</a></p>
-            </article>
-
-            <p class="research-origin">This came out of my broader AI supply chain work. I did not find the name in a screener. It surfaced from mapping the compound-semiconductor layer of my <a href="#projects">AI Supply Chain Globe</a> and scoring the upstream companies on whether the product is genuinely hard to replace, actually moves revenue, and is underfollowed relative to how critical it is.</p>
-
-            <p class="disclaimer">This is independent research I produced for my own learning. It is not investment advice, I hold no position, and I am not a licensed financial advisor.</p>
         </section>
 
         <section id="interests">
